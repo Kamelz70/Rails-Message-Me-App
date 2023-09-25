@@ -7,9 +7,18 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= favicon_link_tag %>
+    <%= javascript_importmap_tags %>
+
   </head>
 
   <body>
-    <%= yield %>
+<div class="ui container">
+  <%= render 'layouts/navigation' %>
+
+      <%= yield %>
+
+</div>
+
   </body>
 </html>
