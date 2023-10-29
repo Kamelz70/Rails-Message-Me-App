@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+  <%= javascript_include_tag "turbo", type: "module" %>
+
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= favicon_link_tag %>
@@ -13,8 +15,15 @@
   </head>
 
   <body>
+
+
 <div class="ui container">
-  <%= render 'layouts/navigation' %>
+
+
+    <%= render 'layouts/navigation' %>
+
+
+      <%= render 'layouts/messages' %>
 
       <%= yield %>
 
