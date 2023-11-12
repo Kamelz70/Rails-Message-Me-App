@@ -24,6 +24,7 @@ class SessionsController < ApplicationController
 
     def signup
     end
+    
     private
     def get_user_params
         params.require("session").permit(:password,:username)
