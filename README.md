@@ -1,24 +1,9 @@
-# README
+# Rails Message Me app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![image](https://github.com/Kamelz70/Rails-Message-Me-App/assets/56312212/2b6d89c9-ca29-48f5-a36d-beb5569c408b)
 
-Things you may want to cover:
+The application shown is an instant messaging applicationg, it has authentication, and once users login/signup, they're taken to the chatroom page
 
-* Ruby version
+The app uses Implements the Websocket protocol through ActionCable, each users recieves the messages instantly when the chatroom is open
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The UI is styled with semantic UI
