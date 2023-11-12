@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-  get 'signup', to: 'sessions#signup'
+  get 'signup', to: 'users#new'
   post 'message', to: 'messages#create'
+  resources :users, except: [:new]
+
   # Defines the root path route ("/")
   # root "articles#index"
   mount ActionCable.server, at:'/cable'

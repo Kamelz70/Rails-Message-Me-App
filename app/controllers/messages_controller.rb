@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
   before_action :require_user
   def create
     message=current_user.messages.build(message_params)
+    p message
     if message.save
       ActionCable.server.broadcast("chatroom_channel" ,{rendered_message:render_message(message)})
     end
